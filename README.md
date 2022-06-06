@@ -17,10 +17,6 @@ This README is divided into setup instructions for users and relevant instructio
 These instructions are intended for **Lubuntu 20.4.1 LTS**.
 _Please use an upgraded Chrome browser for the best UI experience._
 
-To install this project, get the `.zip` file containing the codebase either from the submission channel or via https://github.com/unsw-cse-comp3900-9900-21T3/capstone-project-9900-h18c-codependent
-(Click **Code** > **Download ZIP** to obtain the `.zip` file)
-
-After that, extract the `.zip` file contents to the desired location.
 
 ## Option A (Install using scripts)
 
