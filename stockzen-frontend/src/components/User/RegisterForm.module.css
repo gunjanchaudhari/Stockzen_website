@@ -1,0 +1,40 @@
+@import 'variables.css';
+
+.errorMessage {
+  position: absolute;
+  padding-left: 5px;
+  margin: 0;
+  font-style: italic;
+  color: var(--loss-red);
+}
+
+.backErrorMessage {
+  text-align: center;
+  font-style: italic;
+  color: var(--loss-red);
+}
+
+.formTitle {
+  text-align: center;
+  font-weight: bold;
+  color: var(--theme-darkened);
+  margin-top: 0;
+}
+
+.formLabel {
+  font-weight: bold;
+  margin: 0 0 2px 5px;
+}
+
+.formRequired {
+  color: var(--loss-red);
+}
+
+.formLink {
+  color: var(--theme-darkened);
+  font-weight: bold;
+}
+
+.controlGroup {
+  margin-bottom: 25px;
+}

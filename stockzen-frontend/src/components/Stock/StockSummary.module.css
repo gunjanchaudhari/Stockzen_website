@@ -1,0 +1,99 @@
+@import 'variables.css';
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50%;
+}
+
+.stockTable {
+  width: 50%;
+  height: 100%;
+  margin: 0px 5px;
+}
+
+.infoRow {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 4px 5px;
+  border-bottom: 1px solid var(--zen-5);
+}
+
+.infoTitle {
+  flex: 0 0 auto;
+  padding: 4px 0px;
+  font-weight: bold;
+}
+
+.infoValue {
+  margin-left: auto;
+  flex: 0 0 auto;
+  padding: 4px 0px;
+}
+
+.indexInfo {
+  position: relative;
+  flex: 1 1 auto;
+  margin-right: 0;
+}
+
+.indexInfo .indexInfoVal {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: white;
+  font-size: x-small;
+  font-weight: bold;
+}
+
+.indexInfo:hover .indexInfoVal {
+  visibility: visible;
+  width: 70%;
+  top: 0%;
+  left: 12%;
+  cursor: default;
+  opacity: 80%;
+}
+
+.questionMark {
+  display: block;
+  transform: scale(70%);
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .indexInfo:hover .indexInfoVal {
+    width: 100%;
+    top: 0%;
+    left: 18%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .indexInfo:hover .indexInfoVal {
+    width: 100%;
+    top: 0%;
+    left: 18%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .indexInfo:hover .indexInfoVal {
+    width: 100%;
+    top: -20%;
+    left: 25%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .indexInfo:hover .indexInfoVal {
+    width: 100%;
+    top: 0%;
+    left: 15%;
+  }
+}

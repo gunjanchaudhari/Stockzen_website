@@ -1,0 +1,23 @@
+:root {
+  --zen-1: #0b132b;
+  --zen-2: #1c2541;
+  --zen-3: #3a506b;
+  --zen-4: #5bc0be;
+  --zen-5: #c2fff6;
+
+  --stockzen-dark: var(--zen-2);
+  --stockzen-light: var(--zen-4);
+  --header-height: 70px;
+  --footer-height: 70px;
+
+  --row-gray-rgb: 195, 195, 195;
+
+  --theme-darkened: #3a506b;
+
+  --loss-red: #e26b6b;
+  --gain-green: #5bc07d;
+
+  --ml-low-red: #de1d2e;
+  --ml-med-yellow: #eab12e;
+  --ml-high-green: var(--gain-green);
+}

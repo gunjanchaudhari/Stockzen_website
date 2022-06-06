@@ -1,0 +1,203 @@
+@import 'variables';
+
+:root {
+  --content-padding: 70px;
+}
+
+.successModal {
+  min-width: 400px;
+  max-width: 30%;
+  position: fixed;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.successModal :global(.modal-content) {
+  background-color: rgba(220, 220, 220, 0.9);
+}
+
+.successModalHeader {
+  border-bottom: 0;
+}
+
+.successModalBody {
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.pageHeader {
+  font-weight: 800;
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.leaderboardTitle {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.challengeDateMessage {
+  font-weight: 500;
+}
+
+.challengeDate {
+  font-weight: 900;
+}
+
+.contentPadder {
+  margin: 0 var(--content-padding) 25px;
+}
+
+.leaderboardTable {
+  margin-top: 10px;
+}
+
+.leaderboardTableHeader {
+  display: flex;
+  margin-left: calc(-1 * var(--content-padding));
+  margin-bottom: 5px;
+}
+
+.leaderboardTableRow {
+  display: flex;
+  margin: 0px 0px 10px calc(-1 * var(--content-padding));
+  align-items: center;
+}
+
+.rowInfo {
+  background-color: rgba(var(--row-gray-rgb), 0.7);
+  min-height: 45px;
+  border: transparent;
+  border-radius: 5px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.rowInfo.rank1 {
+  background-image: linear-gradient(
+    to right,
+    #ffd70080,
+    #ffb800ee 30% 50%,
+    #ffd70080
+  );
+}
+
+.rowInfo.rank2 {
+  background-image: linear-gradient(
+    to right,
+    #cccccc77,
+    #a3a3a3bb 30% 50%,
+    #cccccc77
+  );
+}
+
+.rowInfo.rank3 {
+  background-image: linear-gradient(
+    to right,
+    #ff800060,
+    #cd8032dd 30% 50%,
+    #ff800060
+  );
+}
+
+.medal {
+  background: radial-gradient(#00000066 40%, transparent 58%);
+}
+
+.leaderboardTableRow:hover .rowInfo {
+  outline: 1px solid var(--zen-4);
+}
+
+.rowYou {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: var(--content-padding);
+  text-align: center;
+  font-weight: 700;
+}
+
+.rowRank {
+  flex-basis: 120px;
+  text-align: center;
+}
+
+.leaderboardTableRow .rowRank {
+  font-weight: 800;
+}
+
+.rowUser {
+  flex-basis: 120px;
+  flex-grow: 1;
+}
+
+.rowGain {
+  flex-basis: 150px;
+  text-align: center;
+}
+
+.leaderboardTableRow .rowGain {
+  font-weight: 800;
+}
+
+.rowTopStock {
+  flex-basis: 150px;
+  text-align: center;
+}
+
+.leaderboardTableRow .rowTopStock {
+  font-weight: 600;
+}
+
+.rowMore {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.submitPortfolio {
+  color: var(--zen-4);
+
+  font-weight: 700;
+  padding: 0 !important;
+}
+
+.nextChallengeMessage {
+  margin: 20px 0px 10px;
+}
+
+
+.modal :global(.modal-content) {
+  background-color: rgba(220, 220, 220, 0.9);
+}
+
+.closeButton {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.modalHeader {
+  display: block;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.modalHeader .description {
+  margin-bottom: 5px;
+}
+
+.modalBody {
+  background-color: rgba(220, 220, 220, 0.9);
+  border: 4px solid var(--zen-5);
+  border-radius: 10px;
+  color: #3a506b;
+  padding-top: 0;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}

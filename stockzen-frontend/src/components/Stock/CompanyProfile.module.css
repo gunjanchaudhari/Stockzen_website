@@ -1,0 +1,39 @@
+@import 'variables.css';
+
+.profileWrapper {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.companyName {
+  display: inline-block;
+  font-size: large;
+  font-weight: bolder;
+  margin: 5px 0px 15px 0px;
+}
+
+.linkImg {
+  display: inline-block;
+  transform: translate(-15%, -10%) scale(80%);
+}
+
+.industry {
+  max-width: 85px;
+}
+
+.industryValue {
+  max-width: 370px;
+}
+
+.sector {
+  max-width: 72px;
+}
+
+.sectorValue {
+  max-width: 370px;
+}
+
+.description {
+  overflow: auto;
+}

@@ -1,0 +1,412 @@
+@import 'variables.css';
+
+.tableToolbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.toolbarText {
+  flex-basis: auto;
+  flex-grow: 1;
+}
+
+.toolbarControls {
+}
+
+.portfolioTable {
+  width: 100%;
+}
+
+.moneyGain {
+  color: #5bc07d;
+}
+
+.moneyLoss {
+  color: #e26b6b;
+}
+
+.tableBar {
+  display: flex;
+  height: 10%;
+  border-bottom: 2px solid;
+  border-color: #c4c0c0;
+  padding: 0;
+  margin-bottom: 8px;
+  list-style-type: none;
+}
+
+.tableBar .tabs {
+  width: auto;
+  height: 10%;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 5px 5px 0px 0px;
+  border-color: var(--zen-4);
+  padding: 5px 10px;
+  margin-right: 5px;
+  font-weight: 300;
+  transition: all 0.1s;
+}
+
+.tableBar .activeTab {
+  width: auto;
+  height: 10%;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 5px 5px 0px 0px;
+  border-color: var(--zen-3);
+  color: var(--zen-3);
+  opacity: 0.85;
+  background-color: #d1d1d1;
+  padding: 5px 10px;
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.sideScrollWrapper {
+  max-width: 100vw;
+  overflow-x: auto;
+  margin-right: -35px;
+}
+
+.sdieScrollContainer {
+  min-width: 615px;
+  margin: 0 1px;
+}
+
+.tableHeader,
+.rowStockInfo {
+  display: flex;
+  align-items: center;
+}
+
+.tableRow {
+  flex-grow: 1;
+  flex-basis: auto;
+  border-radius: 10px;
+  background-color: rgba(var(--row-gray-rgb), 0.7);
+}
+
+.tableHeader button {
+  font-weight: 400;
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--zen-3);
+  padding: 0px;
+  min-width: 0;
+
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  min-height: 28px;
+}
+
+.tableHeader .rowCode button {
+  justify-content: center;
+}
+
+.tableHeader .rowName button {
+  justify-content: center;
+}
+
+.stockWrapper {
+  margin-right: -25px;
+  padding-bottom: 7px;
+  display: flex;
+}
+
+.rowStockInfo {
+  flex-grow: 1;
+  flex-basis: auto;
+  display: flex;
+
+  border-radius: 10px 10px 0px 0px;
+  padding: 5px 10px 5px 5px;
+  align-items: center;
+
+  transition: border-radius 0.2s;
+  cursor: pointer;
+}
+
+.panelHidden .rowStockInfo {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.tableRow .rowStockInfo {
+  min-height: 50px;
+}
+
+.rowHandle {
+  flex-basis: 25px;
+  color: var(--zen-3);
+  flex-shrink: 0;
+}
+
+.rowCode {
+  flex-grow: 0.2;
+  flex-shrink: 0;
+  flex-basis: 70px;
+  text-align: center;
+
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rowName {
+  flex-grow: 0.2;
+  flex-basis: 100px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+  white-space: nowrap;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.rowStockLink {
+  text-decoration: none;
+  color: var(--zen-4);
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.panelContainer {
+  transition: 0.2s;
+  overflow: hidden;
+}
+
+.panelSeparator {
+  margin: 0;
+}
+
+.panelContent {
+  margin: 10px 0px;
+}
+
+.rowPrice {
+  text-align: right;
+  flex-basis: 80px;
+  flex-shrink: 0;
+  flex-grow: 0.1;
+}
+
+.rowChange {
+  text-align: right;
+  flex-basis: 80px;
+  flex-shrink: 0;
+  flex-grow: 0.1;
+}
+
+.rowAveragePrice {
+  text-align: right;
+  flex-basis: 90px;
+  flex-shrink: 0;
+  flex-grow: 0.1;
+}
+
+.rowProfit {
+  text-align: right;
+  flex-basis: 65px;
+  flex-shrink: 0;
+  flex-grow: 0.1;
+}
+
+.rowProfit {
+  text-align: right;
+  flex-basis: 88px;
+  display: inline-block;
+  text-align: right;
+  flex-shrink: 0;
+  flex-grow: 0.1;
+}
+
+.rowValue {
+  text-align: right;
+  flex-basis: 109px;
+  flex-shrink: 0;
+  flex-grow: 0.1;
+}
+
+.rowPredict {
+  text-align: right;
+  flex-basis: 88px;
+  flex-shrink: 0;
+  flex-grow: 0.1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.predictArrow {
+  height: 23px;
+}
+
+.indicatorContainer {
+  height: 20px;
+  width: 8px;
+  margin-left: 2px;
+}
+
+.indicatorOutline {
+  display: flex;
+  border-radius: 3px;
+  outline: 1px solid rgba(58, 80, 107, 0.7);
+  padding: 1px 1px;
+  width: 100%;
+  height: 100%;
+}
+
+.indicatorLevel {
+  align-self: flex-end;
+  border-radius: 2px 2px 2px 2px;
+  width: 100%;
+}
+
+.rowDelete {
+  flex-basis: 35px;
+  text-align: right;
+  flex-shrink: 0;
+  padding-top: 10px;
+}
+
+.tableHeader .infoRowCode button {
+  justify-content: center;
+}
+
+.tableHeader .infoRowName button {
+  justify-content: center;
+}
+
+.tableHeader .rowShortInfo button {
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.infoRowCode {
+  flex-grow: 0.2;
+  flex-shrink: 0;
+  flex-basis: 55px;
+  text-align: center;
+
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.infoRowName {
+  flex-grow: 0.2;
+  flex-basis: 85px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+  white-space: nowrap;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.rowInfo {
+  text-align: right;
+  flex-basis: 70px;
+  flex-shrink: 0;
+  flex-grow: 0.1;
+}
+
+.rowShortInfo {
+  text-align: right;
+  flex-basis: 65px;
+  flex-shrink: 0;
+  flex-grow: 0.1;
+}
+
+.rowLongInfo {
+  text-align: right;
+  flex-basis: 100px;
+  flex-shrink: 0;
+  flex-grow: 0.1;
+}
+
+.deleteButton {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+@media (any-hover: hover) {
+  .rowDelete button {
+    visibility: hidden;
+  }
+
+  .stockWrapper:hover .rowDelete button {
+    visibility: visible;
+  }
+
+  .rowHandle img {
+    visibility: hidden;
+  }
+
+  .tableRow:hover .rowHandle img {
+    visibility: visible;
+  }
+
+  .notDragging .tableRow:hover {
+    outline: 1px solid var(--zen-4);
+  }
+
+  .notDragging .panelHidden .tableRow:hover .rowStockInfo {
+    background-color: var(--zen-5);
+  }
+
+  .editButton {
+    visibility: hidden;
+  }
+
+  .tableRow:hover .editButton {
+    visibility: visible;
+  }
+}
+
+.percent {
+  font-size: 0.8em;
+}
+
+.tableRow .rowName,
+.tableRow .infoRowName,
+.tableRow .rowPrice,
+.tableRow .rowChange,
+.tableRow .rowAveragePrice,
+.tableRow .rowProfit,
+.tableRow .rowValue,
+.tableRow .rowInfo,
+.tableRow .rowLongInfo,
+.tableRow .rowShortInfo {
+  font-size: 0.8em;
+}
+
+.spinner {
+  text-align: center;
+  height: 30px;
+  margin: 5px;
+}
+
+/*   
+  md: 768px,
+  lg: 992px, */
+
+@media only screen and (max-width: 767px) {
+  .rowStocks {
+    display: none;
+  }
+  .rowTotalGain {
+    display: none;
+  }
+  .rowChange {
+    display: none;
+  }
+}

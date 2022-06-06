@@ -1,0 +1,27 @@
+@import 'variables.css';
+
+footer {
+  min-height: var(--footer-height);
+  color: var(--zen-5);
+  background-color: var(--stockzen-dark);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer.userAuthenticated {
+  background-color: var(--stockzen-light);
+  color: var(--zen-3);
+}
+
+.currency {
+  font-size: 0.8em;
+  font-style: italic;
+}
