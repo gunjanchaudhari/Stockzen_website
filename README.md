@@ -1,9 +1,8 @@
 # StockZen
 
 _A stock portfolio management webapp_
-
-[![Backend Test](https://github.com/unsw-cse-comp3900-9900-21T3/capstone-project-9900-h18c-codependent/actions/workflows/backend-test.yml/badge.svg)](https://github.com/unsw-cse-comp3900-9900-21T3/capstone-project-9900-h18c-codependent/actions/workflows/backend-test.yml)
-[![Frontend Test](https://github.com/unsw-cse-comp3900-9900-21T3/capstone-project-9900-h18c-codependent/actions/workflows/frontend-test.yml/badge.svg)](https://github.com/unsw-cse-comp3900-9900-21T3/capstone-project-9900-h18c-codependent/actions/workflows/frontend-test.yml)
+[![Backend Test](https://github.com/gunjanchaudhari/Stockzen_website/tree/master/.github/workflows/backend-test.yml)]
+[![Frontend Test](https://github.com/gunjanchaudhari/Stockzen_website/tree/master/.github/workflows/frontend-test.yml)]
 
 This README is divided into setup instructions for users and relevant instructions for project devs:
 
